@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Vorujak</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_game_over">GameOver</string>
+    <string name="title_activity_shop">Shop</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_win">Win</string>
+    <string name="title_activity_take_award">TakeAward</string>
+    <string name="title_activity_about">About</string>
+</resources>

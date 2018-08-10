@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "13491786425",
+    "firebase_url": "https://vorujak-533af.firebaseio.com",
+    "project_id": "vorujak-533af",
+    "storage_bucket": "vorujak-533af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13491786425:android:f7b15a018fcac2e4",
+        "android_client_info": {
+          "package_name": "com.example.rb.vorujak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13491786425-l6hktalk5ibfimh3l76uds02l6ci2s88.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rb.vorujak",
+            "certificate_hash": "299bc93717f670c032ccbbf316daf64634a45485"
+          }
+        },
+        {
+          "client_id": "13491786425-493456m0v79s49lu4cod8e31m876im0s.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "13491786425-493456m0v79s49lu4cod8e31m876im0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClz068S2u1PnOydlaWEJAsxGVCHr7B3l4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13491786425-493456m0v79s49lu4cod8e31m876im0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

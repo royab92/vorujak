@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key'
+            keyPassword '12345678'
+            storeFile file('/Users/bahrampashootan/AndroidStudioProjects/myKey.jks')
+            storePassword '12345678'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.example.rb.vorujak"
+        minSdkVersion 21
+        targetSdkVersion 26
+        renderscriptTargetApi 26
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //compile 'com.google.firebase:firebase-messaging:10.0.1'
+    // compile 'com.google.firebase:firebase-core:16.0.0'
+    //compile 'com.google.firebase:firebase-crash:16.0.0'
+    //compile 'com.google.android.gms:play-services:+'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    compile 'com.github.adhishlal:gifloader:1.1'
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.android.support:percent:23.3.0'
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.google.firebase:firebase-crash:11.0.4'
+    compile 'com.google.firebase:firebase-core:11.0.4'
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
+    compile 'com.wonderkiln:blurkit:1.0.0'
+    compile 'me.dm7.barcodescanner:zxing:1.9'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services-location:11.0.4'
+    compile 'com.google.code.gson:gson:2.3.1'
+    //compile files('libs/signalr­client­sdk.jar')
+   // compile files('libs/signalr­client­sdk­android.jar')
+    compile 'com.smartarmenia:dotnetcoresignalrclientjava:1.14'
+}
+apply plugin: 'com.google.gms.google-services'

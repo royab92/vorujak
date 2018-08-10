@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rb.vorujak.Register"
+    android:background="@drawable/register">
+
+
+
+    <EditText
+        android:id="@+id/editText"
+        app:layout_widthPercent="50%"
+       app:layout_heightPercent="7%"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView13"
+        app:layout_marginTopPercent="3%"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:ems="11"
+        android:textColor="@color/lpurple"
+        android:hint="شماره موبایل"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:lines="1"
+        android:background="@drawable/editt"
+        android:alpha="0.8"
+        />
+
+    <Button
+        android:id="@+id/button"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="7%"
+        android:text="تایید"
+        app:layout_marginTopPercent="3%"
+        android:background="@color/pink"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="Confirm"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:id="@+id/textView13"
+        app:layout_widthPercent="85%"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="10%"
+        android:textSize="8pt"
+        android:text="جهت نام نویسی شماره خود را وارد کنید."
+        android:textColor="@color/White"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        app:layout_widthPercent="85%"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button"
+        app:layout_marginTopPercent="5%"
+        android:textSize="8pt"
+        android:text="یک کد شناسایی برایتان پیامک می شود، آن را در مرحله بعد وارد کنید."
+        android:textColor="@color/White"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/moaref"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="7%"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true"
+       app:layout_marginTopPercent="3%"
+        android:text="شماره موبایل معرف"
+        android:inputType="phone"
+        android:ems="11"
+        android:textColor="@color/lpurple"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:lines="1"
+        android:background="@drawable/editt"
+        android:alpha="0.8"
+        />
+
+
+</android.support.percent.PercentRelativeLayout>
+

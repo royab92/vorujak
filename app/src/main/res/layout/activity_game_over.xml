@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rb.vorujak.GameOver"
+    android:background="@color/red"
+   >
+<TextView
+    android:background="@color/White"
+    android:id="@+id/white"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    app:layout_widthPercent="88%"
+    app:layout_heightPercent="40%">
+</TextView>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Over"
+        android:textColor="@color/red"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="37%"/>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="42%"
+        android:layout_alignParentLeft="true"
+        app:layout_marginLeftPercent="10%"
+        app:srcCompat="@drawable/badkonaki"
+
+         />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/merikhi"
+        app:layout_marginTopPercent="42%"
+        android:layout_alignParentLeft="true"
+        app:layout_marginLeftPercent="25%"
+         />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nakhoonak"
+        app:layout_marginTopPercent="43%"
+        android:layout_alignParentLeft="true"
+        app:layout_marginLeftPercent="40%"/>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/kermmarmoolaki"
+        app:layout_marginTopPercent="43%"
+        android:layout_alignParentLeft="true"
+        app:layout_marginLeftPercent="55%" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gavazn"
+        app:layout_marginTopPercent="43%"
+        android:layout_alignParentLeft="true"
+        app:layout_marginLeftPercent="70%" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gavi"
+        app:layout_marginTopPercent="43%"
+        android:layout_alignParentLeft="true"
+        app:layout_marginLeftPercent="82%" />
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/exit"
+        app:layout_marginTopPercent="58%"
+        android:layout_alignParentLeft="true"
+        app:layout_marginLeftPercent="11%"
+        android:clickable="true"
+        android:onClick="ClickExit"/>
+
+    <ImageView
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/shop"
+        app:layout_marginTopPercent="56%"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="11%"
+        android:clickable="true"
+        android:onClick="ClickShop"/>
+
+
+</android.support.percent.PercentRelativeLayout>
